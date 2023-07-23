@@ -12,7 +12,7 @@ I will take care of the rest. 😎"""
 ★ Language: <a href=https://www.python.org>Python</a>
 ★ Library: <a href=https://pyrogram.org>Pyrogram</a>"""
 
-    MY_OWNER_TXT = """★ Name: Nothing
+    MY_OWNER_TXT = """★ Name: shivu
 ★ Username: @Shreeshiva323
 ★ ID: <code>5536032493</code>
 ★ Country: india 🇮🇳"""
