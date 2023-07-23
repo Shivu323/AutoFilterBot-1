@@ -21,7 +21,7 @@ STICKERS = (environ.get('STICKERS', 'CAACAgIAAxkBAAEGm9hjhf69CtQmXoeQ2HidYCGBFeZ
 PICS = (environ.get('PICS', 'https://telegra.ph/file/210ff138ce77ab1fcf2f0.jpg')).split()
 
 # Bot Admins
-ADMINS = [int(admins) if id_pattern.search(admins) else admins for admins in environ.get('ADMINS', '5536032493, 5651594253').split()]
+ADMINS = [int(admins) if id_pattern.search(admins) else admins for admins in environ.get('ADMINS', '5536032493').split()]
 auth_users = [int(auth_users) if id_pattern.search(auth_users) else auth_users for auth_users in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
@@ -46,7 +46,7 @@ IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SPELL_CHECK = is_enabled(environ.get("SPELL_CHECK", "True"), True)
 SHORTLINK = is_enabled((environ.get('SHORTLINK', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "False")), False)
-WELCOME = is_enabled((environ.get('WELCOME', "False")), False)
+WELCOME = is_enabled((environ.get('WELCOME', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
